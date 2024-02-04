@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_drawer_layout"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_cLayout"
+        >
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@id/main_cLayout"
+            app:layout_constraintRight_toRightOf="@id/main_cLayout"
+            app:layout_constraintTop_toTopOf="@id/main_cLayout"
+            app:layout_constraintVertical_bias="1.0">
+
+        </androidx.viewpager2.widget.ViewPager2>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/main_drawer_list"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ff333344"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+</androidx.drawerlayout.widget.DrawerLayout>
